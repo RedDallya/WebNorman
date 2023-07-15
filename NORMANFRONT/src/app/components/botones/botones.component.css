@@ -1,0 +1,102 @@
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+        
+	}
+}
+
+/**
+ * Layout
+ */
+body {
+	margin: 0 auto;
+	max-width: 40em;
+	width: 88%;
+    
+}
+
+.section {
+	color: #d9e0e4;
+	height: 105vh;
+	margin: 10px;
+  scroll-margin-top: 209px;
+  font-family: 'Caveat', cursive;
+  
+  
+}
+
+#a {background-image: radial-gradient(circle at 50% 50%, #bf682d 0, #b65a30 12.5%, #a94b32 25%, #973c31 37.5%, #812d2d 50%, #6b1f28 62.5%, #571423 75%, #460b1f 87.5%, #38051b 100%);}
+#c { background-image: radial-gradient(circle at 50% 50%, #bd6100 0, #b85100 12.5%, #ae3f06 25%, #9f2b10 37.5%, #8b1313 50%, #760013 62.5%, #640013 75%, #530012 87.5%, #460012 100%);}
+#b { background-image: radial-gradient(circle at 50% 50%, #74d8cb 0, #6bc2bd 16.67%, #65aaaa 33.33%, #5f8f92 50%, #597579 66.67%, #525f61 83.33%, #4a4c4c 100%);}
+#d { background-image: radial-gradient(circle at 50% 50%, #61baaa 0, #58a59d 16.67%, #518e8b 33.33%, #4b7475 50%, #455b5d 66.67%, #3e4647 83.33%, #373534 100%); }
+
+h2 {
+	margin: 2px;
+	padding: 0;
+    
+}
+
+/**
+ * Sticky navigation
+ */
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+/**
+ * Display lists on a single line.
+ * @bugfix Prevent webkit from removing list semantics
+ * 1. Add a non-breaking space
+ * 2. Make sure it doesn't mess up the DOM flow
+ */
+.list-inline {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  
+
+
+}
+
+.list-inline > li {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+    
+}
+
+.list-inline > li:before {
+	content: "\200B"; /* 1 */
+	position: absolute; /* 2 */
+	
+}
+
+.img-thumbnail{
+    border-radius: 100px;
+   width: 120px;
+    margin-right: 25px;
+	margin-bottom: 10px;
+	
+}
+
+
+
+.carousel{
+	margin-left: 100px;
+	width: 460px;
+}
+
+#carouselExample{
+	margin-left: 600px;
+	
+	top: -440px;
+}
+
+
