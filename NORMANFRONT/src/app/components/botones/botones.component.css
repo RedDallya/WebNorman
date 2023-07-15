@@ -20,24 +20,45 @@ body {
 }
 
 .section {
-	color: #d9e0e4;
+	color: #f9fdff;
 	height: 105vh;
 	margin: 10px;
-  scroll-margin-top: 209px;
+  scroll-margin-top: 29px;
   font-family: 'Caveat', cursive;
+  
+
   
   
 }
 
-#a {background-image: radial-gradient(circle at 50% 50%, #bf682d 0, #b65a30 12.5%, #a94b32 25%, #973c31 37.5%, #812d2d 50%, #6b1f28 62.5%, #571423 75%, #460b1f 87.5%, #38051b 100%);}
-#c { background-image: radial-gradient(circle at 50% 50%, #bd6100 0, #b85100 12.5%, #ae3f06 25%, #9f2b10 37.5%, #8b1313 50%, #760013 62.5%, #640013 75%, #530012 87.5%, #460012 100%);}
-#b { background-image: radial-gradient(circle at 50% 50%, #74d8cb 0, #6bc2bd 16.67%, #65aaaa 33.33%, #5f8f92 50%, #597579 66.67%, #525f61 83.33%, #4a4c4c 100%);}
-#d { background-image: radial-gradient(circle at 50% 50%, #61baaa 0, #58a59d 16.67%, #518e8b 33.33%, #4b7475 50%, #455b5d 66.67%, #3e4647 83.33%, #373534 100%); }
+#a {background-color:  #141414;  
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(237, 237, 237);
+  }
 
-h2 {
-	margin: 2px;
-	padding: 0;
-    
+#b {background-color:  #141414;  
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(237, 237, 237);
+  }
+
+  #c {background-color:  #141414;  
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(237, 237, 237);
+  }
+
+  #d {background-color:  #141414;  
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(237, 237, 237);
+  }
+
+.culo {
+	margin-left: 300px;
+	font-size: 80px;
+    box-shadow: 0  1px rgb(237, 237, 237);
 }
 
 /**
@@ -91,6 +112,7 @@ h2 {
 .carousel{
 	margin-left: 100px;
 	width: 460px;
+	z-index: 1;
 }
 
 #carouselExample{
@@ -100,3 +122,42 @@ h2 {
 }
 
 
+.description1{
+	max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+  
+    text-align: center;
+	font-size: 36px;
+    color: #fff9f9;
+    margin-bottom: 20px;
+}
+
+.mb-3{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	width: 300px;
+	margin-left: 500px;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px; /* Espacio entre los iconos y los campos de formulario */
+	margin-left: 500px;
+	margin-top: 20px;
+  }
+  
+  .icon-container a {
+	margin-right: 20px; /* Espacio entre los iconos */
+  }
+  
+  .bola {
+	width: 100px; /* Ajusta el tamaño de los iconos según tus necesidades */
+	height: 100px;
+	box-shadow: 0 0 5px 2px white; /* Efecto de sombra en los márgenes */
+	border-radius: 50%;
+  }
+  
+  
+  
+  

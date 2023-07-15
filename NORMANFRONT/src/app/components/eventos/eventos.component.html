@@ -1,4 +1,4 @@
-<div id="sidemenu" [ngClass]="{ 'expanded': isMenuExpanded }">
+<div id="sidemenu" [ngClass]="{ 'expanded': isMenuExpanded, 'menu-collapsed': !isMenuExpanded  }">
     <div id="header">
       <div id="title"><span>Menu</span></div>
       <div id="menu-btn" (click)="toggleMenu()">
@@ -12,8 +12,8 @@
   
     <div id="menu-items">
       <div class="item">
-        <a href="#a">
-          <div class="icon"><img src="../../../assets/eventos.jpeg" alt=""></div>
+        <a href="#a" (click)="toggleMenu()">
+          <div class="icon"><img src="../../../assets/eventito.png" alt=""></div>
           <div class="title"><span>Eventos</span></div>
         </a>
       </div>
@@ -21,33 +21,45 @@
       <div class="item separator"></div>
   
       <div class="item">
-        <a href="#b">
-          <div class="icon"><img src="../../../assets/quienes.png" alt=""></div>
-          <div class="title"><span>Culo</span></div>
+        <a href="#b" (click)="toggleMenu()">
+          <div class="icon"><img src="../../../assets/quien.png" alt=""></div>
+          <div class="title"><span>Quienes Somos</span></div>
         </a>
       </div>
   
       <div class="item separator"></div>
   
       <div class="item">
-        <a href="#c">
-          <div class="icon"><img src="../../../assets/staff.jpeg" alt=""></div>
-          <div class="title"><span>Rata</span></div>
+        <a href="#c" (click)="toggleMenu()">
+          <div class="icon"><img src="../../../assets/staffito.png" alt=""></div>
+          <div class="title"><span>Staff</span></div>
         </a>
       </div>
   
       <div class="item separator"></div>
   
       <div class="item">
-        <a href="#d">
-          <div class="icon"><img src="../../../assets/contacto.jpeg" alt=""></div>
+        <a href="#d" (click)="toggleMenu()">
+          <div class="icon"><img src="../../../assets/contactito.png" alt=""></div>
           <div class="title"><span>Contacto</span></div>
         </a>
       </div>
   
       <div class="item separator"></div>
+
+
+      <div class="item">
+        <a href="https://www.passline.com/eventos/feddox-sol-de-muro-norman-soundaka-roomie-club" (click)="toggleMenu()">
+          <div class="icon"><img src="../../../assets/carrito.png" alt=""></div>
+          <div class="title"><span>COMPRAR</span></div>
+        </a>
+      </div>
+  
+      <div class="item separator"></div>
+
     </div>
   </div>
   
+    
   
   

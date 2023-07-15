@@ -12,4 +12,3 @@ export class EventosComponent {
     this.isMenuExpanded = !this.isMenuExpanded;
   }
 }
-

@@ -3,17 +3,24 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 50px;
-    background-color: rgb(6, 99, 133);
+    width: 72px;
+    background-color: #57ffdd95;
     color: rgb(0, 0, 0);
     overflow-y: auto;
     transition: width 0.3s;
+    
   }
   
   #sidemenu.expanded {
-    width: 300px;
+    width: 269px;
+    z-index: 2;
   }
   
+#sidemenu.expanded .item .icon img{
+  width: 64px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+}
+
   #header {
     box-sizing: border-box;
     border-bottom: solid 1px #000000;
@@ -45,22 +52,15 @@
     margin: 5px 0;
   }
   
-  #profile {
-    border-bottom: solid 1px #ca5b5b;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  #profile #photo img {
-    width: 60%;
-  }
+ 
   
   #menu-items {
-    padding: 10px;
+    padding: 1px;
   }
   
   #menu-items .item {
     margin-bottom: 10px;
+    
   }
   
   #menu-items .item .icon,
@@ -69,31 +69,40 @@
     vertical-align: middle;
     overflow: hidden;
     display: inline-block;
+    text-overflow: ellipsis;
+  white-space: nowrap;
+  
   }
+  
+
   
   #menu-items .item a {
     color: rgb(3, 1, 1);
     text-decoration: none;
     display: flex;
     align-items: center;
+    
   }
   
   #menu-items .item a:hover {
-    background-color: #000000;
+    background-color: #cabdbd;
   }
   
   #menu-items .item .icon {
-    box-sizing: border-box;
-    padding: 10px;
-    width: 70px;
+    font-size: 50%;
+    vertical-align: middle;
+  
+   
   }
   
   #menu-items .item .icon img {
     width: 100%;
+    
   }
   
   #menu-items .item .title {
-    padding: 0 10px;
+    padding: 10px  10px;
+   
   }
   
   #menu-items .item.separator {
@@ -112,3 +121,8 @@
     margin-top: 20px;
   }
   
+
+  #sidemenu.menu-collapsed .item .title {
+    display: none;
+  }
+
