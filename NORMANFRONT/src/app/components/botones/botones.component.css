@@ -1,163 +1,145 @@
 html {
 	scroll-behavior: smooth;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
 	html {
-		scroll-behavior: auto;
-        
+	  scroll-behavior: auto;
 	}
-}
-
-/**
- * Layout
- */
-body {
+  }
+  
+  body {
 	margin: 0 auto;
 	max-width: 40em;
 	width: 88%;
-    
-}
-
-.section {
+  }
+  
+  .section {
 	color: #f9fdff;
 	height: 105vh;
 	margin: 10px;
-  scroll-margin-top: 29px;
-  font-family: 'Caveat', cursive;
+	scroll-margin-top: 29px;
+	font-family: 'Caveat', cursive;
+  }
   
-
+  #a {
+	background-color: #141414;
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(237, 237, 237);
+  }
   
+  #b {
+	background-color: #141414;
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgb(237, 237, 237);
+  }
   
-}
-
-#a {background-color:  #141414;  
+  #c {
+	background-color: #141414;
 	margin: 10px;
 	padding: 20px;
 	box-shadow: 0 0 10px rgb(237, 237, 237);
   }
-
-#b {background-color:  #141414;  
+  
+  #d {
+	background-color: #141414;
 	margin: 10px;
 	padding: 20px;
 	box-shadow: 0 0 10px rgb(237, 237, 237);
   }
-
-  #c {background-color:  #141414;  
-	margin: 10px;
-	padding: 20px;
-	box-shadow: 0 0 10px rgb(237, 237, 237);
-  }
-
-  #d {background-color:  #141414;  
-	margin: 10px;
-	padding: 20px;
-	box-shadow: 0 0 10px rgb(237, 237, 237);
-  }
-
-.culo {
+  
+  .culo {
 	margin-left: 300px;
 	font-size: 80px;
-    box-shadow: 0  1px rgb(237, 237, 237);
-}
-
-/**
- * Sticky navigation
- */
-.sticky {
+	box-shadow: 0 1px rgb(237, 237, 237);
+  }
+  
+  .sticky {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-}
-
-/**
- * Display lists on a single line.
- * @bugfix Prevent webkit from removing list semantics
- * 1. Add a non-breaking space
- * 2. Make sure it doesn't mess up the DOM flow
- */
-.list-inline {
-	display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  }
   
-
-
-}
-
-.list-inline > li {
+  .list-inline {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-start;
+  }
+  
+  .list-inline > li {
 	display: inline-block;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-    
-}
-
-.list-inline > li:before {
-	content: "\200B"; /* 1 */
-	position: absolute; /* 2 */
-	
-}
-
-.img-thumbnail{
-    border-radius: 100px;
-   width: 120px;
-    margin-right: 25px;
+  }
+  
+  .list-inline > li:before {
+	content: "\200B";
+	position: absolute;
+  }
+  
+  .img-thumbnail {
+	border-radius: 100px;
+	width: 120px;
+	margin-right: 25px;
 	margin-bottom: 10px;
-	
-}
-
-
-
-.carousel{
+  }
+  
+  .carousel {
 	margin-left: 100px;
 	width: 460px;
 	z-index: 1;
-}
-
-#carouselExample{
-	margin-left: 600px;
-	
-	top: -440px;
-}
-
-
-.description1{
-	max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+  }
   
-    text-align: center;
+  #carouselExample{
+	margin-left: 600px;
+	top: -400px;
+  }
+  
+  .description1 {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	box-shadow: 0 0 5px 2px white;
+	text-align: center;
 	font-size: 36px;
-    color: #fff9f9;
-    margin-bottom: 20px;
-}
-
-.mb-3{
+	color: #fff9f9;
+	margin-bottom: 20px;
+  }
+  
+  .mb-3 {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	width: 300px;
 	margin-left: 500px;
-}
-
-.icon-container {
+  }
+  
+  .icon-container {
 	display: flex;
 	align-items: center;
-	margin-bottom: 30px; /* Espacio entre los iconos y los campos de formulario */
+	margin-bottom: 30px;
 	margin-left: 500px;
 	margin-top: 20px;
   }
   
   .icon-container a {
-	margin-right: 20px; /* Espacio entre los iconos */
+	margin-right: 20px;
   }
   
   .bola {
-	width: 100px; /* Ajusta el tamaño de los iconos según tus necesidades */
+	width: 100px;
 	height: 100px;
-	box-shadow: 0 0 5px 2px white; /* Efecto de sombra en los márgenes */
+	box-shadow: 0 0 5px 2px white;
 	border-radius: 50%;
   }
   
-  
+  .uno {
+	color: #fefefe;
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+  }
   
   
