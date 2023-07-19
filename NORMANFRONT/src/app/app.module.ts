@@ -10,7 +10,9 @@ import { QuienessomosComponent } from './components/quienessomos/quienessomos.co
 import { StaffComponent } from './components/staff/staff.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { BotonesComponent } from './components/botones/botones.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,14 @@ import { BotonesComponent } from './components/botones/botones.component';
     QuienessomosComponent,
     StaffComponent,
     ContactoComponent,
-    BotonesComponent
+    BotonesComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
