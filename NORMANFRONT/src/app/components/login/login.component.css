@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #000000;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(0, 0, 0), rgb(64, 63, 63));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(8, 8, 8), rgb(47, 42, 42))
+    
+    }
+   
+    .card-body{
+        line-height: 0;
+    background-color: rgba(34, 40, 41, 0.61);
+    }
+    .form-label{
+        margin: 17px;
+    }
+    

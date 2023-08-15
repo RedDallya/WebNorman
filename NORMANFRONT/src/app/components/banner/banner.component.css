@@ -1,16 +1,34 @@
 #banner{
   max-width: 100%;
-    display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100%;
-  margin-left: 0%;
+ 
 
 }
-a{
 
-  margin-left:700px;
+.btn{
+  margin-left:600px;
+  margin-top: 500px;
+  align-items: center;
+}
 
+
+/* For PCs */
+@media (min-width: 768px) {
+  .boton {
+     background-image: url("../../../assets/diseno.png");
+     background-size: cover;
+     /* You can adjust other properties like background-position, etc. */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 767px) {
+  .boton {
+     background-image: url("../../../assets/diseno.png");
+     background-size: contain;
+     /* You can adjust other properties like background-position, etc. */
+  }
 }
 
 

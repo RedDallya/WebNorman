@@ -1,12 +1,12 @@
 export class persona{
     id?: number;
-    nombre: String;
-    apellido: String;
-    img: String;
+    nombreUsuario: String;
+    password: String;
+   
 
-    constructor(nombre: String,apellido: String, img: String){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.img = img;
+    constructor(nombreUsuario: String,password: String){
+        this.nombreUsuario = nombreUsuario;
+        this.password = password;
+        
     }
 }

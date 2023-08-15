@@ -1,32 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/service/persona.service';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-staff',
   templateUrl: './staff.component.html',
   styleUrls: ['./staff.component.css']
 })
-export class StaffComponent implements OnInit {
-persona: persona = new persona("","","");
-constructor(public personaService: PersonaService){
-  
+export class StaffComponent implements OnInit{
+  isLogged = false;
+
+  constructor(private router: Router, private tokenService: TokenService) { }
+
+ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
 }
 
-ngOnInit() {
-  this.personaService.getPersona().subscribe(data => {this.persona = data})
-    
-    const signUpButton = document.getElementById('signUp') as HTMLButtonElement;
-    const signInButton = document.getElementById('signIn') as HTMLButtonElement;
-    const container = document.getElementById('container') as HTMLDivElement;
+onLogOut():void{
+  this.tokenService.logOut();
+  window.location.reload();
+}
 
-    signUpButton.addEventListener('click', () => {
-      container.classList.add('right-panel-active');
-    });
-
-    signInButton.addEventListener('click', () => {
-      container.classList.remove('right-panel-active');
-    });
+  login(): void {
+    this.router.navigate(['/login']);
   }
-
 }
