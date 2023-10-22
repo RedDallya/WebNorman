@@ -1,3 +1,4 @@
+/* Estilos para pantallas más grandes (por defecto) */
 #sidemenu {
   position: fixed;
   top: 0;
@@ -8,15 +9,15 @@
   color: rgb(0, 0, 0);
   overflow-x: auto;
   white-space: nowrap;
-  z-index: 999; /* valor alto para asegurar que esté encima de otros elementos */
- 
+  z-index: 999;
 }
+
 
 #header {
   box-sizing: border-box;
   
   padding: 1px;
-  display: flex;
+
   align-items: center;
 }
 
@@ -97,9 +98,80 @@
   
 }
 
-.item1{
+.item2{
 position: fixed;
 margin-left: 88%;
 margin-top: -40px;
 
 }
+
+
+
+
+
+
+/* Sidebar Styles */
+.sidebar1 {
+  width: 80px; /* Adjust the width as needed */
+  height: 35%; /* Adjust the height as needed */
+  position: fixed;
+  top: 0;
+  left: 1px; /* Initially hide the sidebar off-screen */
+  background-color: #33333373; /* Background color of the sidebar */
+  padding-top: 40px; /* Space for a header or menu title */
+  transition: left 0.3s; /* Transition for smooth sliding effect */
+  z-index: 100; /* Set a high z-index to overlay other elements */
+}
+
+/* Styling for navigation items */
+.sidebar1 .item1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar1 .item1 a {
+  display: flex;
+  align-items: center;
+  color: #fff; /* Text color */
+  text-decoration: none;
+  padding: 1px;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.sidebar1 .item1 a:hover {
+  background-color: #555; /* Background color on hover */
+}
+
+/* Sidebar toggle button */
+#menu-btn1 {
+  position: absolute;
+  top: 1px; /* Adjust the top position */
+  left: 1px; /* Adjust the left position */
+  cursor: pointer;
+  color: #fff; /* Button color */
+  font-size: 24px; /* Button size */
+  z-index: 1100; /* Set a higher z-index to overlay the sidebar */
+}
+
+
+
+/* Icon and Title styles */
+.sidebar1 .icon1 {
+  width: 3px; /* Adjust the icon width */
+
+}
+
+.sidebar1 .title1 {
+  flex-grow: 1; /* Allow title to expand to fill remaining space */
+}
+
+/* Separator styles */
+.sidebar1 .separator1 {
+  height: 1px; /* Separator height */
+  background-color: #555; /* Separator color */
+  margin: 5px 0; /* Adjust top and bottom margin */
+}
+
+
+

@@ -1,0 +1,20 @@
+<div *ngIf="isLogged"> 
+<!-- Lista de Eventos -->
+<ul>
+    <li *ngFor="let evento of eventos">{{ evento.descripcion }}</li>
+</ul>
+
+<!-- Formulario para Crear Evento -->
+<form (submit)="saveEvento()">
+    <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <input type="text" class="form-control" id="descripcion" [(ngModel)]="nuevoEvento.descripcion" name="descripcion" >
+    </div>
+    <!-- Agregar checkboxes aquí para seleccionar eventos -->
+    <div class="custom-control custom-checkbox" *ngFor="let evento of eventos">
+        <input type="checkbox" class="custom-control-input" id="checkbox-{{ evento.id }}" [(ngModel)]="evento.seleccionado" name="descripcion">
+        <label class="custom-control-label" for="checkbox-{{ evento.id }}">{{ evento.descripcion }}</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+</div>

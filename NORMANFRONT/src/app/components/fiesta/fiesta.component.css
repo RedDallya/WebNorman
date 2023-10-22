@@ -1,0 +1,17 @@
+.modal-content {
+	border: 3px solid #ffffff ;
+	background-color: rgba(6, 6, 6, 0.938);
+	color: antiquewhite;
+	
+		text-shadow:
+		  2px 2px 4px rgba(250, 0, 0, 0.966), /* Sombra desplazada hacia la derecha y abajo */
+		 -2px -2px 4px rgba(164, 8, 8, 0.5), /* Sombra desplazada hacia la izquierda y arriba */
+		  2px -2px 4px rgba(0, 0, 0, 0.5), /* Sombra desplazada hacia la derecha y arriba */
+		 -2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra desplazada hacia la izquierda y abajo */
+	
+	  
+  }
+
+  .modal-header{
+	border-bottom: 0px;
+  }

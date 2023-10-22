@@ -26,9 +26,12 @@
             ],
             "styles": [
               "src/styles.css"
-            
             ],
-            "scripts": []
+            "scripts": [
+              "../NORMANFRONT/node_modules/jquery/dist/jquery.min.js",
+              "../NORMANFRONT/node_modules/popper.js/dist/umd/popper.min.js",
+              "../NORMANFRONT/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

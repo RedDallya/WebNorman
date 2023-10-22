@@ -1,11 +1,21 @@
-import { Component, NgModule } from '@angular/core';
-import { StaffComponent } from 'C:/Users/Hp/Desktop/NORMANFRONT/NORMANFRONT/src/app/components/staff/staff.component';
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-botones',
   templateUrl: './botones.component.html',
   styleUrls: ['./botones.component.css']
-  
 })
-export class BotonesComponent {}
+export class BotonesComponent implements OnInit {
+  // Propiedad para controlar la visibilidad del contenido protegido
+  isLogged: boolean = false;
 
+  constructor(private AuthService: AuthService) { }
+
+  ngOnInit(): void {
+    // Suscribe al estado de autenticación del servicio AuthService
+    this.AuthService.isLogged$.subscribe((isLogged) => {
+      this.isLogged = isLogged;
+    });
+  }
+}

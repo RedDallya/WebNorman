@@ -1,67 +1,137 @@
-<div id="sidemenu" [ngClass]="{ 'expanded': isMenuExpanded, 'menu-collapsed': !isMenuExpanded  }">
-    <div id="header">
-     
-      <div id="menu-btn" (click)="toggleMenu()">
-  
-      </div>
-    </div>
-  
+<div class="container d-none d-md-block">
+  <div class="row">
+    <div class="col-12">
+      <div id="sidemenu" [ngClass]="{ 'expanded': isMenuExpanded, 'menu-collapsed': !isMenuExpanded  }">
+        <div id="header">
+          <div id="menu-btn" (click)="toggleMenu()"></div>
+        </div>
     
-  
-    <div id="menu-items">
-      <div class="item">
-        <a href="#a" (click)="toggleMenu()">
-          <div class="icon"><img src="../../../assets/eventito.png" alt=""></div>
-          <div class="title"><span>Portfolio</span></div>
-        </a>
-      </div>
-  
-      <div class="item separator"></div>
-  
-      <div class="item">
-        <a href="#b" (click)="toggleMenu()">
-          <div class="icon"><img src="../../../assets/quien.png" alt=""></div>
-          <div class="title"><span>Quienes Somos</span></div>
-        </a>
-      </div>
-  
-      <div class="item separator"></div>
-  
-      <div class="item">
-        <a href="#c" (click)="toggleMenu()">
-          <div class="icon"><img src="../../../assets/staffito.png" alt=""></div>
-          <div class="title"><span>Staff</span></div>
-        </a>
-      </div>
-  
-      <div class="item separator"></div>
-  
-      <div class="item">
-        <a href="#d" (click)="toggleMenu()">
-          <div class="icon"><img src="../../../assets/vecteezy_telephone-contact-icon-in-black-circle-shape_8506403_762.png" alt=""></div>
-          <div class="title"><span>Contacto</span></div>
-        </a>
-      </div>
-  
-      <div class="item separator"></div>
 
 
-      <div class="item">
-        <a href="https://www.passline.com/eventos/feddox-sol-de-muro-norman-soundaka-roomie-club" (click)="toggleMenu()">
-          <div class="icon"><img src="../../../assets/carrito.png" alt=""></div>
-          <div class="title"><span>COMPRAR</span></div>
-        </a>
+        <div id="menu-items">
+          <div class="item">
+            <a href="#a" (click)="toggleMenu()">
+              <div class="icon"><img src="../../../assets/eventito.png" alt=""></div>
+              <div class="title"><span>Portfolio</span></div>
+            </a>
+          </div>
+    
+          <div class="item separator"></div>
+    
+          <div class="item">
+            <a href="#b" (click)="toggleMenu()">
+              <div class="icon"><img src="../../../assets/quien.png" alt=""></div>
+              <div class="title"><span>Quienes Somos</span></div>
+            </a>
+          </div>
+    
+          <div class="item separator"></div>
+    
+          <div class="item">
+            <a href="#c" (click)="toggleMenu()">
+              <div class="icon"><img src="../../../assets/staffito.png" alt=""></div>
+              <div class="title"><span>Staff</span></div>
+            </a>
+          </div>
+    
+          <div class="item separator"></div>
+    
+          <div class="item">
+            <a href="#d" (click)="toggleMenu()">
+              <div class="icon"><img src="../../../assets/vecteezy_telephone-contact-icon-in-black-circle-shape_8506403_762.png" alt=""></div>
+              <div class="title"><span>Contacto</span></div>
+            </a>
+          </div>
+    
+          <div class="item separator"></div>
+    
+          <div class="item">
+            <a href="https://www.passline.com/eventos/feddox-sol-de-muro-norman-soundaka-roomie-club" (click)="toggleMenu()">
+              <div class="icon"><img src="../../../assets/carrito.png" alt=""></div>
+              <div class="title"><span>COMPRAR</span></div>
+            </a>
+          </div>
+    
+          <div class="item separator"></div>
+        </div>
+        
+        <div class="item2">
+          <app-staff></app-staff>
+        </div>
       </div>
-  
-      <div class="item separator"></div>
-
     </div>
-    <div class="item1">
-    <app-staff></app-staff>
   </div>
+</div>
+ 
 
 
-  </div>
 
+
+
+
+
+<div class="d-md-none">
+  <nav class="sidebar1">
+   
+        <div id="menu-btn1" (click)="toggleMenu()"></div>
   
   
+
+
+      <div id="menu-items1">
+        <div class="item1">
+          <a href="#a" (click)="toggleMenu()">
+           
+            <div class="title1"><span>Portfolio</span></div>
+          </a>
+        </div>
+  
+        <div class="item separator1"></div>
+  
+        <div class="item1">
+          <a href="#b" (click)="toggleMenu()">
+           
+            <div class="title1"><span>Quienes Somos</span></div>
+          </a>
+        </div>
+  
+        <div class="item separator1"></div>
+  
+        <div class="item1">
+          <a href="#c" (click)="toggleMenu()">
+            
+            <div class="title1"><span>Staff</span></div>
+          </a>
+        </div>
+  
+        <div class="item separator1"></div>
+  
+        <div class="item1">
+          <a href="#d" (click)="toggleMenu()">
+           
+            <div class="title1"><span>Contacto</span></div>
+          </a>
+        </div>
+  
+        <div class="item separator1"></div>
+  
+        <div class="item1">
+          <a href="https://www.passline.com/eventos/feddox-sol-de-muro-norman-soundaka-roomie-club" (click)="toggleMenu()">
+            
+            <div class="title1"><span>COMPRAR</span></div>
+          </a>
+        </div>
+  
+        <div class="item separator1"></div>
+      </div>
+      
+      <div class="item1">
+        <app-staff></app-staff>
+      </div>
+   
+  
+  </nav>
+</div>
+
+
+

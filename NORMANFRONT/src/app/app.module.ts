@@ -15,7 +15,9 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
-import { Evento1Component } from './components/evento1/evento1.component';
+import { FiestaComponent } from './components/fiesta/fiesta.component';
+import { EventoComponent } from './components/evento/evento.component';
+
 
 
 
@@ -32,9 +34,10 @@ import { Evento1Component } from './components/evento1/evento1.component';
     BotonesComponent,
     HomeComponent,
     LoginComponent,
-    Evento1Component,
-    
+    FiestaComponent,
+    EventoComponent,
    
+    
   ],
   imports: [
     BrowserModule,
@@ -42,9 +45,13 @@ import { Evento1Component } from './components/evento1/evento1.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [
+  providers: 
+  [
     interceptorProvider
-  ],
+    
+  ], 
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
