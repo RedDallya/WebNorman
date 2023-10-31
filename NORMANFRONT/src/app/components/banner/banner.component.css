@@ -1,7 +1,19 @@
 .pia{
- margin-top: -90px;
+ margin-top: -130px;
  width: 100%;
+ height: 99%;
+ background: radial-gradient(circle, rgb(46, 45, 45), rgba(34, 34, 34, 0.628), black, black);
+z-index: 1;
 
+
+}
+
+@media (max-width: 992px){
+  .pia{
+    margin-top: 10px;
+    margin-left: 10px;
+  
+  }
 }
 
 .container{
@@ -11,16 +23,26 @@
 #banner{
   max-width: 100%;
  height: 100%;
- 
 
 }
-
-.btn{
-  margin-left:50px;
-  margin-top: -990px;
+.fa-solid.fa-fingerprint.fa-fade.fa-5x {
+  margin-left: 570px;
+  margin-top: -290px;
   align-items: center;
- 
+  z-index: 2; /* Z-index más alto que el de .pia para que esté encima */
+  position: absolute; /* Añadir position: absolute para que pueda superponerse */
+
 }
+
+@media (max-width: 992px){
+  .fa-solid.fa-fingerprint.fa-fade.fa-5x{
+    align-items: center;
+    margin-left: 150px;
+    width: 50px;
+    height: 50px;
+    margin-top: -410px;
+  }
+  }
 
 /* Styles for the popup */
 .popup {

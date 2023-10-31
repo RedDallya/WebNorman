@@ -6,9 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./eventos.component.css']
 })
 export class EventosComponent {
-  isMenuExpanded = false;
-
-  toggleMenu() {
-    this.isMenuExpanded = !this.isMenuExpanded;
-  }
+ 
 }
+
+
