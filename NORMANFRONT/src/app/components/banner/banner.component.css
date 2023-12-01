@@ -26,8 +26,8 @@ z-index: 1;
 
 }
 .fa-solid.fa-fingerprint.fa-fade.fa-5x {
-  margin-left: 570px;
-  margin-top: -290px;
+  margin-left: 600px;
+  margin-top: -240px;
   align-items: center;
   z-index: 2; /* Z-index más alto que el de .pia para que esté encima */
   position: absolute; /* Añadir position: absolute para que pueda superponerse */

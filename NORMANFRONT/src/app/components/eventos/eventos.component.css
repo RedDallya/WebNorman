@@ -90,7 +90,7 @@
 #sidebar .list-items li:hover{
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 0px 10px 3px #f40505;
+  box-shadow: 0 0px 10px 3px #8326FF;
 }
 #sidebar .list-items li:first-child{
   border-top: none;
@@ -132,7 +132,7 @@
   transition: all 0.3s ease;
 }
 #sidebar .list-items .icons a:hover{
-  background: #f10404;
+  background: #8326FF;
 }
 .list-items .icons a:first-child{
   margin-left: 0px;

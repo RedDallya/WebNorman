@@ -1,15 +1,19 @@
-<section class="vh-100 gradient-custom">
-	
+
+<div class="video-container">
+<video autoplay muted loop id="video-background">
+    <source src="../../../assets/fondo.mp4" type="video/mp4">
+</video>
+  
 	<div class="container py-5 h-100" >
 	  <div class="row d-flex justify-content-center align-items-center h-100">
-		<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+		<div class="col-12 col-md-8 col-lg-6 col-xl-5 ">
 		  <div class="card bg-dark text-white" style="border-radius: 1rem;">
 			<div class="card-body p-5 text-center">
   
-			  <div class="mb-md-5 mt-md-4 pb-5">
+			  
   
-				<h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-				<p class="text-white-50 mb-5">Por favor, ingresar usuario y clave</p>
+				<h2 class="fw-bold  text-uppercase">Login</h2>
+				<p class="text-white-50 ">Por favor, ingresar usuario y clave</p>
   
 				<form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
   
@@ -43,4 +47,3 @@
 		</div>
 	  </div>
 	</div>
-  </section>
