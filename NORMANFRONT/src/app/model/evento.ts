@@ -1,4 +1,4 @@
-export class Evento {
+export class Evento { 
     id?: number;
     descripcion: string;
     seleccionado: boolean; // Agregamos la propiedad seleccionado

@@ -28,7 +28,7 @@ html {
 		font-family: 'Montserrat', sans-serif;
 		background-color: #141414;
 		margin-top: 110px;
-		height: 120vh;
+		height: 140vh;
 		padding: 20px;
 		box-shadow: 0 0 10px rgb(237, 237, 237);
 	  }
@@ -167,9 +167,14 @@ margin-bottom: -20px;
 	
   }
   
+  
+
+  
+
   .card-01 .card-body {
 	position: relative;
 	padding-top: 1px;
+	
   }
   
   .card-01 .badge-box {
@@ -336,17 +341,25 @@ margin-bottom: -20px;
 	background-color: #fa0606; /* Color de fondo */
   }}
   
+  .carousel-control-prev, .carousel-control-next{
+	margin-left: 347px;
+	margin-right: 380px;
+	margin-top: 230px;
+	height: 60px;
+	width: 60px;
+  }
+
   .carousel-inner3 {
 	text-align: center;
 	
   }
-  
- 
+
+
   /* Estilos para la clase "botoncito" */
 .botoncito {
 
-	border: #f9f9f9;
-	color: #f90000;
+	border: #060606;
+	color: #040303;
 	font-size: 10px;
 	
 	position: fixed;
@@ -378,7 +391,7 @@ align-items: center;
   
   /* Estilo para el botón cuando se hace clic en él */
   .botoncito:active {
-	background-color: #d5d5d5; /* Cambia el color de fondo al hacer clic */
+	background-color: #060606; /* Cambia el color de fondo al hacer clic */
   }
   
   }
@@ -411,8 +424,8 @@ align-items: center;
 
   .dropdown-toggle {
     background-color: rgb(72, 212, 21);
-    margin-left: 400px;
-	margin-top: 10px;
+    margin-left: 280px;
+	margin-top: -90px;
   }
 
  .btn-outline-light {
@@ -634,8 +647,237 @@ display: none;
 	
 }
 
+.instruccion{
+	width: 30%;
+      height: 30%;
+   
+}
+
+@media (min-width: 768px) {
+	.instruccion {
+	  /* Estilos para dispositivos medianos (tabletas, por ejemplo) */
+	  max-width: 80%; /* Ajusta el tamaño para dispositivos medianos */
+	  margin: 0 auto; /* Centra la imagen en dispositivos medianos */
+	}
+  }
+
+  @media (min-width: 1024px) {
+	.instruccion {
+	  /* Estilos para dispositivos grandes (computadoras de escritorio, por ejemplo) */
+	  max-width: 60%; /* Ajusta el tamaño para dispositivos grandes */
+	  margin-left: 700px;
+	  margin-top: -250px;
+	}
+  }
 		
 	
 	
 	
+  .button23 {
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	border: none;
+	font: normal 80px/normal "Warnes", Helvetica, sans-serif;
+	color: rgba(255,255,255,1);
+	text-decoration: normal;
+	text-align: center;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	white-space: pre;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ff44 , 0 0 70px #15ff00 , 0 0 80px #26ff00 , 0 0 100px #2fff00 ;
+	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
+	margin-bottom: 250px;
+	margin-top: -270px;
+	margin-left: -490px;
+  }
+  
+  .button23:hover {
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #9000ff , 0 0 70px #9000ff , 0 0 80px #9000ff , 0 0 100px #9000ff ;
+  
+}
+
+
+
+  .verde {
+	position:relative; 
+    
+    margin-left:180px;
+ 
+	top: -180px;
+
+ 	  padding:16px 30px;
+
+ 	  font-size:1rem;
+
+ 	  color:var(--color);
+
+ 	  border: 2px solid rgba(0,0,0,0.5);
+
+ 	  border-radius:4px;
+
+ 	  text-shadow:0 0 15px var(--color);
+
+ 	  text-decoration:none;
+
+ 	  text-transform:uppercase;
+
+ 	  letter-spacing:0.1rem;
+
+ 	  transition:0.5s;
+
+ 	  z-index:1;
+	
+
+}
+
+.verde:hover {
+
+	color:#fff;
+
+	border:2px solid rgba(0,0,0,0,0);
+
+	box-shadow:0 0 0px var(--color);
+
+}
+
+.verde::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:var(--color);
+    z-index:-1;
+    transform:scale(0);
+    transition:0.5s;
+}
+
+.verde:hover::before {
+    transform:scale(1);
+    transition-delay:0.5s;
+    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color), 0 0 60px var(--color);
+}
+
+.verde span {
+    position: absolute;
+    background: var(--color);
+    pointer-events: none;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--color),
+                0 0 20px var(--color),
+                0 0 30px var(--color),
+                0 0 50px var(--color),
+                0 0 100px var(--color);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.verde:hover span {
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.verde span:nth-child(1),
+.verde span:nth-child(3) {
+    width: 40px;
+    height: 4px;
+}
+
+.verde:hover span:nth-child(1),
+.verde:hover span:nth-child(3) {
+    transform: translateX(0);
+}
+
+.verde span:nth-child(2),
+.verde span:nth-child(4) {
+    width: 4px;
+    height: 40px;
+}
+
+.verde:hover span:nth-child(1),
+.verde:hover span:nth-child(3) {
+    transform: translateY(0);
+}
+
+.verde span:nth-child(1) {
+    top: calc(50% - 2px);
+    left: -50px;
+    transform-origin: left;
+}
+
+.verde:hover span:nth-child(1) {
+    left: 50%;
+}
+
+.verde span:nth-child(3) {
+    top: calc(50% - 2px);
+    right: -50px;
+    transform-origin: right;
+}
+
+.verde:hover span:nth-child(3) {
+    right: 50%;
+} 
+
+.verde span:nth-child(2) {
+    left: calc(50% - 2px);
+    top: -50px;
+    transform-origin: top;
+}
+
+.verde:hover span:nth-child(2) {
+    top: 50%;
+}
+
+.verde span:nth-child(4) {
+    left: calc(50% - 2px);
+    bottom: -50px;
+    transform-origin:  bottom;
+}
+
+.verde:hover span:nth-child(4) {
+    bottom: 50%;
+}
+
+/* Clase para evitar desbordamiento en pantallas pequeñas */
+@media (max-width: 920px) {
+	.dropdown-toggle {
+		margin: 2px;
+	  margin-bottom: 30px;
+	  
+	}
+  }
+
+  @media (max-width: 920px) {
+	.button23{
+		margin-left: -7px;
+		font-size: 60px;
+		margin-top: 7px;
+	}
+	}
+
+	@media (max-width: 920px) {
+		.instruccion{
+			height: 60%;
+			width: 70%;
+margin-left: 55px;
+			}
+		}
+
+		@media (max-width: 920px) {
+			.verde{
+margin: auto;	
+margin-left: 70px;		
+			}
+			}

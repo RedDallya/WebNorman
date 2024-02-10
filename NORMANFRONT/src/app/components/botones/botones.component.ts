@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/service/auth.service';
 export class BotonesComponent implements OnInit {
   // Propiedad para controlar la visibilidad del contenido protegido
   isLogged: boolean = false;
+  nombreUsuario!: string;
 
   constructor(private AuthService: AuthService) { }
 
@@ -16,6 +17,8 @@ export class BotonesComponent implements OnInit {
     // Suscribe al estado de autenticación del servicio AuthService
     this.AuthService.isLogged$.subscribe((isLogged) => {
       this.isLogged = isLogged;
+
+      
     });
   }
 }

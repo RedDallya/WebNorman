@@ -121,11 +121,7 @@ window.onload = function () {
           this.segments[i].show();
         }
         c.strokeStyle =
-          "hsl(" +
-          (this.rand * 60 + 180) +
-          ",100%," +
-          (this.rand * 60 + 25) +
-          "%)";
+          "#8326FF";
         c.lineWidth = this.rand * 2;
         c.lineCap = "round";
         c.lineJoin = "round";
@@ -137,10 +133,10 @@ window.onload = function () {
       c.beginPath();
       if (dist(this.x, this.y, target.x, target.y) <= this.l) {
         c.arc(this.x, this.y, 2 * this.rand + 1, 0, 2 * Math.PI);
-        c.fillStyle = "white";
+        c.fillStyle = "#8326FF";
       } else {
         c.arc(this.x, this.y, this.rand * 2, 0, 2 * Math.PI);
-        c.fillStyle = "darkcyan";
+        c.fillStyle = "#8326FF";
       }
       c.fill();
     }
@@ -149,7 +145,7 @@ window.onload = function () {
   let maxl = 300,
     minl = 50,
     n = 30,
-    numt = 500,
+    numt = 50,
     tent = [],
     clicked = false,
     target = { x: 0, y: 0 },
